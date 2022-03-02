@@ -10,6 +10,6 @@
 
 ## 2. Run crawler.py
 - Global configuration variables allow you to adjust:
-    -- Time period: how many days are you crawling?
-    -- Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
-    -- Markets: which Perp markets are you crawling? Add any many as you wish.
+ - Time period: how many days are you crawling?
+ - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
+ - Markets: which Perp markets are you crawling? Add any many as you wish.
