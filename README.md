@@ -18,6 +18,6 @@ Script will determine the available/uncrawled periods for the specified Perps an
 
 ## 2. Run crawler.py
 - Global configuration variables allow you to adjust:
- - Time period: how many days are you crawling?
- - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
- - Markets: which Perp markets are you crawling? Add any many as you wish to the List.
+  - Time period: how many days are you crawling?
+  - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
+  - Markets: which Perp markets are you crawling? Add any many as you wish to the List.
