@@ -3,7 +3,7 @@
 This crawler will obtain historical Perpetual Futures data from the FTX API for configurable time periods and resolutions (candle length e.g. 30 seconds, 1 minute, 5 minute etc.)
 
 ## create_db.py
-Script will create the database and tables necessary to store the Period/Perps to crawl and the resuling data (Timestamp, Perp, Open High Low Close Volume)
+Script will create the database and tables necessary to store the Period/Perps to crawl and the resulting data (Open High Low Close Volume).
 
 ## crawler.py
 Script will determine the available/uncrawled periods for the specified Perps and will run a crawler, getting the data at the specified resolution.
@@ -20,4 +20,4 @@ Script will determine the available/uncrawled periods for the specified Perps an
 - Global configuration variables allow you to adjust:
  - Time period: how many days are you crawling?
  - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
- - Markets: which Perp markets are you crawling? Add any many as you wish.
+ - Markets: which Perp markets are you crawling? Add any many as you wish to the List.
