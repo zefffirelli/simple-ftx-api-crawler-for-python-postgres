@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from dateutil import rrule
 import psycopg2
+from psycopg2 import errorcodes, errors
 import requests
-from create_db import psql_connection_string
 
 # Global Configuration
 psql_connection_string = "dbname=postgres user=postgres password=postgres"
@@ -37,9 +37,9 @@ def update_periods():
                         print('{}: {} Period was loaded'.format(day, market))
                         conn.commit()
                     except Exception as e:
-                        print("Error %d: %s" % (e.args[0],e.args[1]))
+                        print("Error :", e)
             except Exception as e:
-                print("Error %d: %s" % (e.args[0],e.args[1]))
+                print("Error :", e)
 
 def get_available_results():
     '''
@@ -58,7 +58,7 @@ def get_available_results():
         else:
             return results
     except Exception as e:
-            print("Error %d: %s" % (e.args[0],e.args[1]))
+            print("Error :", e)
             return None
 
 def get_result(period, market):
@@ -99,7 +99,7 @@ def load_result(data):
         try:
             cur.execute(query, (market, date, open, high, low, close, volume))
         except Exception as e:
-            print('{} {}: Error {:.0f}: {}'.format(market, date, e.args[0],e.args[1]))
+            print("Error :", e)
             conn.rollback()
             return 'failed'
     conn.commit()
@@ -137,7 +137,7 @@ def crawl_results():
                 cur.execute(ins)
                 conn.commit()
             except Exception as e:
-                print("Error %d: %s" % (e.args[0],e.args[1]))
+                print("Error :", e)
                 conn.rollback()
     print('Crawl is complete')            
 

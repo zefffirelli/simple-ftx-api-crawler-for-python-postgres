@@ -6,7 +6,7 @@ def create_db():
     cur = conn.cursor()
     # "CREATE DATABASE" requires automatic commits
     conn.autocommit = True
-    sql_query = f"CREATE DATABASE trading"
+    sql_query = f"CREATE DATABASE postgres"
     try:
         cur.execute(sql_query)
     except Exception as e:
