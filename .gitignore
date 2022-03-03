@@ -127,4 +127,5 @@ dmypy.json
 
 # Custom
 pyvenv.cfg
-setup.py
+setup.py/bin
+/lib
