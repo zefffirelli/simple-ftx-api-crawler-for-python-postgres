@@ -17,7 +17,8 @@ There are two tables:
 
 ## crawler.py
 Script will determine the available/uncrawled periods for the specified Perps and will run a crawler, getting the data at the specified resolution.
-<img width="370" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156554181-5acbae94-28bb-4946-9a94-50dad4d2d6bc.png">
+
+<img width="421" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156554447-11c32fc6-f1a3-4846-b257-b48f194b87c2.png">
 <img width="421" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156536452-e968535c-75d7-43d8-9f5a-8b52be4c93a4.png">
 
 ## 0. Basic setup
