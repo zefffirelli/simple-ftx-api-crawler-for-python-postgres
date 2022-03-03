@@ -17,7 +17,7 @@ There are two tables:
 
 ## crawler.py
 Script will determine the available/uncrawled periods for the specified Perps and will run a crawler, getting the data at the specified resolution.
-
+<img width="370" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156554181-5acbae94-28bb-4946-9a94-50dad4d2d6bc.png">
 <img width="421" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156536452-e968535c-75d7-43d8-9f5a-8b52be4c93a4.png">
 
 ## 0. Basic setup
@@ -34,7 +34,7 @@ Script will determine the available/uncrawled periods for the specified Perps an
 - Run the script with Python3 crawler.py
 - Global configuration variables allow you to adjust:
   - Time period: how many days are you crawling?
-  - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 3600
+  - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 86400
   - Markets: which Perp markets are you crawling? Add any many as you wish.
 
 
