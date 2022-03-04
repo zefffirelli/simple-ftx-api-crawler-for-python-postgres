@@ -29,8 +29,14 @@ Script will determine the available/uncrawled periods for the specified Perps an
 <img width="421" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156554447-11c32fc6-f1a3-4846-b257-b48f194b87c2.png">
 <img width="421" alt="Crawler in action" src="https://user-images.githubusercontent.com/100279323/156536452-e968535c-75d7-43d8-9f5a-8b52be4c93a4.png">
 
-- Global configuration variables allow you to adjust:
+## Configuration:
+Variables allow you to adjust:
   - Time period: how many days are you crawling?
   - Resolution: what granularity of candle are you getting? Resolution is in seconds; 1 minute = 60,  1 day = 86400
   - Markets: which Perp markets are you crawling? Add any many as you wish.
 
+```
+start_period = datetime(2022, 1, 3)
+resolution = 60 #seconds
+markets = ['BTC-PERP', 'ETH-PERP'] # Add as many markets as you want
+```
